@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+    <!--Оглавление-->
+    <TextView
+        android:id="@+id/Alarm"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Alarm"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Кнопки для обозначения будильников-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/Alarm"
+        tools:layout_editor_absoluteX="0dp"
+
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/Alarm_stop_watch"
+            app:layout_constraintTop_toBottomOf="@id/Alarm"
+            tools:layout_editor_absoluteX="0dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/material_dynamic_neutral30"
+                android:onClick="Alarm_Setup"
+                android:text="New alarm  \n12:30"
+                android:textAlignment="viewStart"
+                android:textSize="30dp" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/material_dynamic_neutral30"
+                android:onClick="Alarm_Setup"
+                android:text="New alarm  \n12:30"
+                android:textAlignment="viewStart"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/material_dynamic_neutral30"
+                android:onClick="Alarm_Setup"
+                android:text="New alarm  \n12:30"
+                android:textAlignment="viewStart"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/material_dynamic_neutral30"
+                android:onClick="Alarm_Setup"
+                android:text="New alarm  \n12:30"
+                android:textAlignment="viewStart"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/material_dynamic_neutral30"
+                android:onClick="Alarm_Setup"
+                android:text="New alarm  \n12:30"
+                android:textAlignment="viewStart"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/material_dynamic_neutral30"
+                android:onClick="Alarm_Setup"
+                android:text="New alarm  \n12:30"
+                android:textAlignment="viewStart"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/material_dynamic_neutral30"
+                android:onClick="Alarm_Setup"
+                android:text="New alarm  \n12:30"
+                android:textAlignment="viewStart"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/material_dynamic_neutral30"
+                android:onClick="Alarm_Setup"
+                android:text="New alarm  \n12:30"
+                android:textAlignment="viewStart"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/material_dynamic_neutral30"
+                android:onClick="Alarm_Setup"
+                android:text="New alarm  \n12:30"
+                android:textAlignment="viewStart"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/material_dynamic_neutral30"
+                android:onClick="Alarm_Setup"
+                android:text="New alarm  \n12:30"
+                android:textAlignment="viewStart"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/material_dynamic_neutral30"
+                android:onClick="Alarm_Setup"
+                android:text="New alarm  \n12:30"
+                android:textAlignment="viewStart"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/material_dynamic_neutral30"
+                android:onClick="Alarm_Setup"
+                android:text="New alarm  \n12:30"
+                android:textAlignment="viewStart"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/material_dynamic_neutral30"
+                android:onClick="Alarm_Setup"
+                android:text="New alarm  \n12:30"
+                android:textAlignment="viewStart"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/material_dynamic_neutral30"
+                android:onClick="Alarm_Setup"
+                android:text="New alarm  \n12:30"
+                android:textAlignment="viewStart"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/material_dynamic_neutral30"
+                android:onClick="Alarm_Setup"
+                android:text="New alarm  \n12:30"
+                android:textAlignment="viewStart"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/material_dynamic_neutral30"
+                android:onClick="Alarm_Setup"
+                android:text="New alarm  \n12:30"
+                android:textAlignment="viewStart"
+                android:textSize="30dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:text=""
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--Кнопки для перехода на другие экраны-->
+    <TextView
+        android:id="@+id/Alarm_stop_watch"
+        android:layout_width="98dp"
+        android:layout_height="52dp"
+        android:background="@color/black"
+        android:text="Alarm"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/Clock_stop_watch"
+        android:layout_width="104dp"
+        android:layout_height="52dp"
+        android:background="@color/black"
+        android:onClick="Clock"
+        android:text="Clock"
+        android:textAlignment="center"
+        android:textColor="@color/material_dynamic_neutral70"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintLeft_toRightOf="@id/Alarm_stop_watch"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/StopWatch_stop_watch"
+        android:layout_width="104dp"
+        android:layout_height="52dp"
+        android:background="@color/black"
+        android:onClick="StopWach"
+        android:text="StopWatch"
+        android:textAlignment="center"
+        android:textColor="@color/material_dynamic_neutral70"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintLeft_toRightOf="@id/Clock_stop_watch"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/Timer_stop_watch"
+        android:layout_width="104dp"
+        android:layout_height="52dp"
+        android:background="@color/black"
+        android:onClick="Timer"
+        android:text="Timer"
+        android:textAlignment="center"
+        android:textColor="@color/material_dynamic_neutral70"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@id/StopWatch_stop_watch"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/material_dynamic_neutral40"
+        android:onClick="Alarm_Setup"
+        android:text="+"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:layout_margin="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
