@@ -1,49 +1,52 @@
-package com.example.log;
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
 
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="40sp"
+        android:layout_marginBottom="20dp"/>
 
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
+    <EditText
+        android:id="@+id/timeInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="MM:SS"
+        android:inputType="number"
+        android:maxLength="5"
+        android:layout_marginBottom="20dp"/>
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
 
-public class MainActivity extends AppCompatActivity {
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_marginEnd="10dp"/>
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.alarm);
-    }
+        <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause"
+            android:layout_marginEnd="10dp"/>
 
-    //Функции для перехода на другие экраны
-    public void Alarm(View view) {
-        setContentView(R.layout.alarm);
-    }
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"/>
+    </LinearLayout>
 
-    public void Clock(View view) {
-        setContentView(R.layout.clock);
-    }
-
-    public void StopWach(View view) {
-        setContentView(R.layout.stop_watch);
-    }
-
-    public void Timer(View view) {
-        setContentView(R.layout.timer);
-    }
-
-    public void Alarm_Setup(View view) {
-        setContentView(R.layout.alarm_setup);
-    }
-
-
-}
+</LinearLayout>
