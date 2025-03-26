@@ -1,22 +1,23 @@
-package com.example.log;
+package com.example.clock;
+
+import static java.security.AccessController.getContext;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
+import android.content.Context;
+
 
 public class MainActivity extends AppCompatActivity {
 
+    //Переход на главный экран при открытии приложения
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,25 +26,41 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Функции для перехода на другие экраны
-    public void Alarm(View view) {
+    public void alarm(View view) {
         setContentView(R.layout.alarm);
     }
 
-    public void Clock(View view) {
+    public void clock(View view) {
         setContentView(R.layout.clock);
     }
 
-    public void StopWach(View view) {
+    public void stopWach(View view) {
         setContentView(R.layout.stop_watch);
     }
 
-    public void Timer(View view) {
+    public void timer(View view) {
         setContentView(R.layout.timer);
     }
 
-    public void Alarm_Setup(View view) {
+    public void alarmSetup(View view) {
         setContentView(R.layout.alarm_setup);
     }
 
+    //Функция для добавления нового будильника
+    public void addAlarm(View view) {
+        setContentView(R.layout.alarm);
+        LinearLayout buttonContainer = (LinearLayout) findViewById(R.id.buttonContainer);
+        Button button = new Button(MainActivity.this);
+        buttonContainer.addView(button);
+
+    }
+    //Функция для активации будильника
+    public void activateAlarm(View view) {
+        //null
+    }
+    //Функция для удаления будильника
+    public void deleteAlarm(View view) {
+        //null
+    }
 
 }
