@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
     private Button startButton, pauseButton, stopButton;
     private Handler handler;
     private Runnable runnable;
-    private int totalTimeInSeconds = 0; // Общее время в секундах
-    private int remainingTimeInSeconds = 0; // Оставшееся время в секундах
+    private int totalTimeInSeconds = 0;
+    private int remainingTimeInSeconds = 0;
     private boolean isRunning = false;
     private boolean isPaused = false;
 
