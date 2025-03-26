@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
 
-            // Преобразуем введенное время в секунды
             String[] parts = input.split(":");
             int minutes = Integer.parseInt(parts[0]);
             int seconds = Integer.parseInt(parts[1]);
@@ -93,12 +92,10 @@ public class MainActivity extends AppCompatActivity {
     private void pauseTimer() {
         if (isRunning) {
             if (isPaused) {
-                // Продолжаем таймер
                 handler.post(runnable);
                 isPaused = false;
                 pauseButton.setText("Pause");
             } else {
-                // Ставим на паузу
                 handler.removeCallbacks(runnable);
                 isPaused = true;
                 pauseButton.setText("Resume");
